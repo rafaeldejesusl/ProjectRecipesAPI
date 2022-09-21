@@ -40,7 +40,9 @@ public class RecipesController : ControllerBase
     [HttpPost]
     public IActionResult Create([FromBody]Recipe recipe)
     {
-        throw new NotImplementedException();
+        if (recipe is null) return BadRequest();
+        _service.AddRecipe(recipe);
+        return CreatedAtAction("GetRecipe", new { name = recipe.Name }, recipe);
     }
 
     [HttpPut("{name}")]

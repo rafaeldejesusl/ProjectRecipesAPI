@@ -62,7 +62,7 @@ public class TestRecipesControllerCreate
     {
         RecipesController instance = new RecipesController(new RecipeService());        
         var actionResult = instance.Create(entryRecipe);                
-        var okResult = actionResult as CreatedAtRouteResult;
+        var okResult = actionResult as CreatedAtActionResult;
         var actualList = okResult.Value;
         actualList.Should().BeEquivalentTo(entryRecipe);
         instance._service.GetRecipes().Should().BeEquivalentTo(expected);
