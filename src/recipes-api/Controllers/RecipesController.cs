@@ -48,7 +48,9 @@ public class RecipesController : ControllerBase
     [HttpPut("{name}")]
     public IActionResult Update(string name, [FromBody]Recipe recipe)
     {
-        throw new NotImplementedException();
+        if (recipe is null || name != recipe.Name) return BadRequest();
+        _service.UpdateRecipe(recipe);
+        return NoContent();
     }
 
     [HttpDelete("{name}")]
