@@ -24,14 +24,17 @@ public class RecipesController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        throw new NotImplementedException();    
+        var result = _service.GetRecipes();
+        return Ok(result);    
     }
 
     //Read
     [HttpGet("{name}", Name = "GetRecipe")]
     public IActionResult Get(string name)
     {                
-        throw new NotImplementedException();
+        var result = _service.GetRecipe(name);
+        if (result is null) return NotFound();
+        return Ok(result);
     }
 
     [HttpPost]
