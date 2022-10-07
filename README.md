@@ -1,8 +1,8 @@
 Este repositório contém um projeto desenvolvido enquanto pessoa estudante da @betrybe.
 
-# CalendarEvents
+# RecipesAPI
 
-O projeto CalendarEvents foi desenvolvido em C# utilizando o ASP.NET e tem como objetivo ser uma API que faz um CRUD numa lista de receitas de comida. Possui os seguintes endpoints:
+O projeto RecipesAPI foi desenvolvido em C# utilizando o ASP.NET e tem como objetivo ser uma API que faz um CRUD numa lista de receitas de comida. Possui os seguintes endpoints:
 
 - GET /Recipes : Retorna todas as receitas na lista;
 
@@ -22,9 +22,9 @@ Foram realizados testes utilizando o XUnit e o FluentAssertions.
 
 Para rodar a aplicação, utilize os seguintes comandos:
 
-- dotnet restore
+- Na pasta src: dotnet restore
 
-- dotnet run
+- Na pasta recipes-api: dotnet run 
 
 ## Feedbacks
 
