@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recipes-api", "recipes-api\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recipes-api.Test", "recipes-api.Test\recipes-api.Test.csproj", "{7C7FC677-9977-4C9F-9507-A9C7F820DD33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recipes-api.Test.Test", "recipes-api.Test.Test\recipes-api.Test.Test.csproj", "{CBEDA5A5-07D1-47CF-ACAB-BAACFC8F9463}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
